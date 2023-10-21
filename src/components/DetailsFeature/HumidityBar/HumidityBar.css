@@ -1,0 +1,47 @@
+.humidity-bar {
+  width: 100%;
+  color: var(--gray);
+}
+
+.dark-theme .humidity-bar {
+  color: var(--light-gray);
+}
+
+.humidity-bar__legend {
+  display: flex;
+  justify-content: space-between;
+}
+
+.humidity-bar__unit,
+.humidity-bar__segment {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14.22px;
+}
+
+.humidity-bar__value {
+  position: relative;
+  border-radius: 10px;
+  height: 11px;
+  background-color: var(--gray-d3);
+}
+
+.dark-theme .humidity-bar__value {
+  background-color: var(--light-gray);
+}
+
+.humidity-bar__value::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--value);
+  bottom: 0;
+  border-radius: inherit;
+  background-color: var(--accent);
+}
+
+.humidity-bar__unit {
+  display: block;
+  text-align: right;
+}

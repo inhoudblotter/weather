@@ -1,0 +1,45 @@
+.theme-switch__switch-btn {
+  position: relative;
+  display: flex;
+  margin: 18px 44px 0 0;
+  padding: 3px;
+  border: 2px solid var(--hint);
+  border-radius: 20px;
+  width: 64px;
+  height: fit-content;
+  background-color: var(--panel-light);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dark-theme .theme-switch__switch-btn {
+  background-color: var(--panel-dark);
+}
+
+.theme-switch__switch-btn .switch-btn__icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.theme-switch__switch-btn .switch-btn__icon path:nth-child(1) {
+  fill: var(--light-gray);
+  transition: fill 0.3s ease-in-out;
+}
+
+.dark-theme .theme-switch__switch-btn .switch-btn__icon {
+  transform: translateX(36px);
+}
+
+.dark-theme .theme-switch__switch-btn .switch-btn__icon path:nth-child(1) {
+  fill: #ec6e4d;
+}
+
+@media (max-width: 1439px) {
+  .theme-switch__switch-btn {
+    margin: 26px 25px 0 0;
+  }
+}
+
+@media (max-width: 833px) {
+  .theme-switch__switch-btn {
+    margin: 22px 32px 0 0;
+  }
+}

@@ -1,0 +1,39 @@
+.details__container {
+  padding: 0 64px;
+}
+
+.details__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px 80px;
+}
+
+@media (max-width: 1439px) {
+  .details__title {
+    margin: 0 0 24px -17px;
+  }
+
+  .details__items {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 833px) {
+  .details__title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .details__container {
+    padding: 0;
+  }
+
+  .details__title {
+    margin-bottom: 29px;
+  }
+
+  .details__item:first-child {
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,75 @@
+.feature {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 25px 24px;
+  border-radius: 10px;
+  height: 100%;
+  min-height: 162px;
+  width: 320px;
+  background-color: var(--panel-light);
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dark-theme .feature {
+  background-color: var(--panel-dark);
+}
+
+.feature__title {
+  margin: 0 0 24px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.feature__value {
+  margin-right: 5px;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.feature__unit {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.wind-direction {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.wind-direction__icon {
+  margin-right: 11px;
+}
+
+.wind-direction__value {
+  min-width: 41px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.feature--wind-speed {
+  padding-bottom: 12px;
+}
+
+.feature--wind-speed .feature__title {
+  margin-bottom: 12px;
+}
+
+.feature--wind-speed .feature__value-container {
+  margin-bottom: 3px;
+}
+
+.feature--humidity {
+  padding-bottom: 10px;
+}
+
+.feature--humidity .feature__title {
+  margin-bottom: 12px;
+}
+
+.feature--pressure .feature__unit {
+  font-size: 18px;
+}

@@ -1,0 +1,26 @@
+.alert {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 100%;
+  width: fit-content;
+  background-color: var(--accent);
+  color: var(--background-light);
+  font-size: 18px;
+}
+
+.alert__message {
+  margin-right: 10px;
+}
+
+.alert__close-btn {
+  display: flex;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+}
+
+.alert__close-btn path {
+  fill: var(--background-light);
+}

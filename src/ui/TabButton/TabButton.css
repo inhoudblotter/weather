@@ -1,0 +1,69 @@
+.tab-btn {
+  position: relative;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: var(--gray-6d);
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tab-btn::after {
+  position: absolute;
+  content: '';
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--gray);
+  transition:
+    width 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+}
+
+.dark-theme .tab-btn::after {
+  background-color: var(--light-gray);
+}
+
+.tab-btn--active {
+  color: inherit;
+}
+
+.tab-btn--active::after {
+  width: 100%;
+}
+
+.tab-btn:focus {
+  outline: none;
+}
+
+.tab-btn:focus-visible {
+  color: var(--gray);
+}
+
+.dark-theme .tab-btn:focus-visible {
+  color: var(--light-gray);
+}
+
+/* State: hover */
+
+@media (hover: hover) {
+  .tab-btn:hover {
+    color: var(--gray);
+  }
+
+  .dark-theme .tab-btn:hover {
+    color: var(--light-gray);
+  }
+
+  .tab-btn:hover::after {
+    width: 100%;
+  }
+}
+
+/* State: active */
+
+.tab-btn:active {
+  color: var(--gray);
+}

@@ -1,0 +1,4 @@
+.wind-direction__icon {
+  transform: rotate(var(--value));
+  transition: transform 0.3s ease-in-out;
+}

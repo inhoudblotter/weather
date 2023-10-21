@@ -1,0 +1,97 @@
+@import url('./normalize.css');
+@import url('./variables.css');
+@import url('./fonts.css');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  min-width: 355px;
+  min-height: 100vh;
+  background-color: var(--background-light);
+  font-family: 'Rubic', sans-serif;
+  color: var(--gray);
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+#root.dark-theme {
+  color: var(--light-gray);
+  background-color: var(--background-dark);
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding: 42px 54px 44px 74px;
+  width: 68%;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 852px;
+}
+
+.title {
+  margin: 0 0 17px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stop-scroll {
+  overflow: hidden;
+}
+
+.prevent-events {
+  pointer-events: none;
+}
+
+.alerts {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 15px;
+  font-family: 'Rubic', sans-serif;
+}
+
+@media (max-width: 1439px) {
+  .main {
+    padding-top: 62px;
+    padding-left: 27px;
+    padding-right: 28px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 833px) {
+  #root {
+    flex-direction: column;
+  }
+
+  .main {
+    padding-top: 48px;
+    padding-bottom: 94px;
+    min-width: 100%;
+  }
+}

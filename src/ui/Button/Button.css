@@ -1,0 +1,44 @@
+.btn {
+  padding: 15px 27px;
+  border: 2px solid var(--hint);
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 700;
+  color: inherit;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:focus-visible {
+  background-color: var(--light-gray);
+}
+
+.dark-theme .btn:focus-visible {
+  background-color: var(--hint);
+}
+
+/* State: hover */
+
+@media (hover: hover) {
+  .btn:hover {
+    background-color: var(--light-gray);
+  }
+
+  .dark-theme .btn:hover {
+    background-color: var(--hint);
+  }
+}
+
+/* State: active */
+
+.btn:active {
+  background-color: var(--gray);
+  color: var(--panel-light);
+}
